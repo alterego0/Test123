@@ -7,7 +7,7 @@
     shell: echo'Begin file' > /home/prateek/loops.txt
   - name:install packages
     shell:echo "{{item}}"  >> /home/prateek/loops.txt
-    with_items
+    with_items:
       - vim
       - nano
       - python
