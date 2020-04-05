@@ -1,0 +1,8 @@
+ ---
+ - name: Get stats and write to desktop
+   hosts: LinuxHosts
+   tasks:
+     - name: get system status and information
+       shell: uname-a >/home/prateek/output.txt
+     - name: print my username
+       shell: whoami >> /home/prateek/output.txt
