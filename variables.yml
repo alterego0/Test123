@@ -1,6 +1,6 @@
 --- 
 - 
-  hosts: LinuxHosts
+ hosts: LinuxHosts
   name: "Playbook with variables demo"
   tasks: 
     ? "-name"
