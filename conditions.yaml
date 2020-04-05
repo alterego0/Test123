@@ -1,0 +1,11 @@
+---
+- hosts: LinuxHosts
+  become: true
+  tasks:
+    -name: install nginx on ubuntu
+     apt: name=nginx state=latest
+     ignore_errors: yes
+     register: results
+    -name: install nginx on Centos
+     yum: name=nginx state=latest
+     when: results|failed 
