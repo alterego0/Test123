@@ -3,6 +3,6 @@
    hosts: LinuxHosts
    tasks:
      - name: get system status and information
-       shell: uname-a >/home/prateek/output.txt
+       shell: uname-a >/home/prateek/prateek/output.txt
      - name: print my username
-       shell: whoami >> /home/prateek/output.txt
+       shell: whoami >> /home/prateek/prateek/output.txt
